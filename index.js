@@ -1,12 +1,9 @@
-var most_Unreadable_Logger = function(worlD) {
-  do {
-    var word = ''; 
-    for (var i=worlD.length-1;i>=0;i--){
-      word+=worlD[i]
-      console.log(i);
-    }
-    console.log(word)
-  } while (false);
-}.bind(null, 'Hello World');
+const invertPrint = function(printArg) {
+  let printValue = "";
+  for (let i = printArg.length - 1; i >= 0; i--) {
+    printValue += printArg[i];
+  }
+  console.log(printValue);
+};
 
-most_Unreadable_Loggger('Hello World');
+invertPrint("Hello World");
