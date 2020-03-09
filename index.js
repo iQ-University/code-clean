@@ -1,20 +1,12 @@
-var sumArrAy = 0;
+let sumArray = 0;
 
-
-function addArrayFinalSum(arr) {
-  for (let index = 0, len = arr.length; index < len; index++) {
-
-    if (typeof arr[index] !== 'number') {
-      sumArrAy = sumArrAy + addArrayFinalSum(arr[index])
-
-    } else {
-
-      sumArrAy = sumArrAy + arr[index]
-    }
+addArrayFinalSum = (arr) => {
+  for (let index = 0; index < arr.length; index++) {
+    sumArray += arr[index]
   }
-  response = sumArrAy;
-
-  return response;
-  console.log("got here!!!");
+  return sumArray;
 }
-console.log('abc:', addArrayFinalSum([1,2,3,4,5,6]));
+console.log(`Sum is: ${addArrayFinalSum([1, 2, 3, 4, 5, 6])}`);
+
+
+
