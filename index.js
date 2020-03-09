@@ -3,9 +3,11 @@ var most_Unreadable_Logger = function(worlD) {
     var word = ''; 
     for (var i=worlD.length-1;i>=0;i--){
       word+=worlD[i]
+      console.log(i);
     }
     console.log(word)
   } while (false);
 }.bind(null, 'Hello World');
 
+most_Unreadable_Logger('Hello World');
 most_Unreadable_Logger('Hello World');
