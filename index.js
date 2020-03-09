@@ -10,4 +10,4 @@ var most_Unreadable_Logger = function(worlD) {
 }.bind(null, 'Hello World');
 
 most_Unreadable_Logger('Hello World');
-most_Unreadable_Logger('Hello World');
+most_Unreadable_LoSgger('Hello World');
