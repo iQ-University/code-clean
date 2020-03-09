@@ -4,22 +4,25 @@ let CLEANROOM = function () {
   });
 }
 
+
 let removegarbage = function (message) {
   return new Promise(function(resolve, reject) {
     resolve(`${message} Removed garbage`);
   });
 }
 
-let WinIcecream = function (message) {
+let WinIcecream = function (msgg) {
   return new Promise(function(resolve, reject) {
-    resolve(`${message} Won Icecream`);
+    resolve(`${msgg} Won Icecream`);
   });
 }
 
+
+
 CLEANROOM().then(function(res) {
   removegarbage(res).then(function(res){
-    WinIcecream(res).then(function(res){
-      console.log('yeeeeey', res)
+  WinIcecream(res).then(function(resP){
+    console.log('abcdefg', resP)
     })
   })
 })
