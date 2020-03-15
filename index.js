@@ -1,8 +1,7 @@
 document.querySelector('button').addEventListener('click', function () {
-  let event = this.window;
-  var NewItem = document.createElement("LI");
-   var textnode = document.createTextNode("wateR");
-    NewItem.appendChild(textnode);
-    document.querySelector('ul').insertBefore(NewItem, document.querySelector('ul').childNodes[0])
-    console.log("works!!!");
+  let newItem = document.createElement("li");
+  let textnode = document.createTextNode("Here is you're water, Bob.");
+  newItem.appendChild(textnode);
+  document.querySelector('ul').insertBefore(newItem, document.querySelector('ul').childNodes[0])
+  console.log("Bob received his water!!!");
 });
