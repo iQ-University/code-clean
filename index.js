@@ -1,28 +1,11 @@
-let CLEANROOM = function () {
-  return new Promise(function(resolve, reject) {
-    resolve('Cleaned the room');
-  });
-}
+let cleanRoom = () => new Promise(resolve => resolve('Cleaned the room,'));
+
+let removeGarbage = message => new Promise(resolve => resolve(`${message} Removed garbage,`));
+
+let winIcecream = message => new Promise(resolve => resolve(`${message} Won Icecream`));
 
 
-let removegarbage = function (message) {
-  return new Promise(function(resolve, reject) {
-    resolve(`${message} Removed garbage`);
-  });
-}
-
-let WinIcecream = function (msgg) {
-  return new Promise(function(resolve, reject) {
-    resolve(`${msgg} Won Icecream`);
-  });
-}
-
-
-
-CLEANROOM().then(function(res) {
-  removegarbage(res).then(function(res){
-  WinIcecream(res).then(function(resP){
-    console.log('abcdefg', resP)
-    })
-  })
-})
+cleanRoom()
+.then(removeGarbage)
+.then(winIcecream)
+.then(resolvedTasks => console.log('Completed tasks: ', resolvedTasks));
