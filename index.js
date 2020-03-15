@@ -1,5 +1,5 @@
 let reverse = reverted => {
-    var word = ''; 
+    let word = ''; 
     for (let i = reverted.length-1; i >= 0; i--){
       word += reverted[i];
     }
