@@ -1,12 +1,10 @@
-var most_Unreadable_Logger = function(worlD) {
-  do {
-    var word = ''; 
-    for (var i=worlD.length-1;i>=0;i--){
-      word+=worlD[i]
-      console.log(i);
+let reverse = reverted => {
+    let word = ''; 
+    for (let i = reverted.length-1; i >= 0; i--){
+      word += reverted[i];
     }
-    console.log(word)
-  } while (false);
-}.bind(null, 'Hello World');
+    return word;
+}
 
-most_Unreadable_Loggger('Hello World');
+console.log(reverse('Hello World'));
+console.log(reverse('Nicoleta'));
